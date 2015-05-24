@@ -17,3 +17,10 @@ i.e. in your working directory you must have a subdirectory named:
 
 Wherever possible I have used plyr's join() command or cbind() to connect the
 dataframes, because using merge() would have reordered them incorrectly.
+
+The process the script uses is a funnel, roughly put it assembles the data
+for the Train and Test sets individually, then combines them at the end.
+
+This was done to prevent accidents involving the row order getting jumbled.
+
+Given more time and iteration I'd probably combine first, then assemble next time.
